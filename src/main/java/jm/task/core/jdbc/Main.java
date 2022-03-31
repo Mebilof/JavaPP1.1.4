@@ -20,10 +20,5 @@ public class Main {
         userDao.getAllUsers();
         userDao.cleanUsersTable();
         userDao.dropUsersTable();
-        try {
-            Util.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
 }
