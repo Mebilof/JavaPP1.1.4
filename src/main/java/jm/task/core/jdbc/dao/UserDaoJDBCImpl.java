@@ -15,7 +15,7 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
 
     public void createUsersTable() {
         try (Connection connection = getConnection(); Statement statement = connection.createStatement()){
-            statement.executeUpdate("CREATE TABLE Users(id BIGINT, name VARCHAR(25), lastName VARCHAR (30), age INT)");
+            statement.executeUpdate("CREATE TABLE Users(id SERIAL, name VARCHAR(25), lastName VARCHAR (30), age INT)");
         } catch (SQLException e) {
             e.printStackTrace();
         }
