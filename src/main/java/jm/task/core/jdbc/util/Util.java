@@ -11,7 +11,6 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 public class Util {
-    private static SessionFactory sessionFactory;
 
     private static final String URL = "jdbc:postgresql://localhost:5432/MyBase";
     private static final String NAME = "postgres";
