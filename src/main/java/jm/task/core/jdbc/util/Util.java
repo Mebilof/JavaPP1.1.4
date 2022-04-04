@@ -14,7 +14,7 @@ public class Util {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/MyBase";
     private static final String NAME = "postgres";
-    private static final String PASS = "254954";
+    private static final String PASS = "";
 
 
     public static Connection getConnection() {
@@ -37,8 +37,6 @@ public class Util {
                 .setProperty("hibernate.connection.username", NAME)
                 .setProperty("hibernate.connection.password", PASS)
                 .setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL95Dialect")
-                .setProperty("hibernate.show_sql", "true")
-                .setProperty("hibernate.current_session_context_class", "thread")
                 .addAnnotatedClass(User.class);
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                 .applySettings(configuration.getProperties()).build();
