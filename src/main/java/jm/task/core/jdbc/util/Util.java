@@ -14,7 +14,7 @@ public class Util {
 
     private static final String URL = "jdbc:postgresql://localhost:5432/MyBase";
     private static final String NAME = "postgres";
-    private static final String PASS = "";
+    private static final String PASS = "254954";
 
 
     public static Connection getConnection() {
